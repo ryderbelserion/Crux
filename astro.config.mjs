@@ -11,9 +11,7 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
 	site: 'https://docs.ryderbelserion.com',
 
-	adapter: cloudflare({
-		imageService: 'cloudflare'
-	}),
+	adapter: cloudflare(),
 
 	integrations: [
 		starlight({
