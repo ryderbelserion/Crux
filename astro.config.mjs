@@ -5,9 +5,13 @@ import starlight from '@astrojs/starlight';
 import topics from 'starlight-sidebar-topics'
 import sidebar from 'starlight-auto-sidebar'
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://docs.ryderbelserion.com',
+
+	adapter: cloudflare(),
 
 	integrations: [
 		starlight({
