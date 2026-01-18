@@ -1,9 +1,9 @@
 ---
-title: Questions
+title: FAQ
 description: A list of frequently asked questions
 
 sidebar:
-  order: 2
+  order: 3
 ---
 ## Why is my LuckPerms config.yml not correct?
 The optional dependency should ensure that LuckPerms loads first, and so it does. LuckPerms loads *before* my plugin. It seems that LuckPerms is copying my `config.yml` from my `jar` file when it enables. (???????)

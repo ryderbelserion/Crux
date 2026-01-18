@@ -13,11 +13,20 @@ hero:
 
 import {CardGrid} from '@astrojs/starlight/components';
 
-import Card from '../components/Card.astro'
+import LinkCard from '../components/LinkCard.astro'
 
-## Quick Start
+### Minecraft
+#### Mods
 <CardGrid>
-    <Card>
-        Hello
-    </Card>
+    <LinkCard title="SimpleFlags" icon="information" href="/minecraft/mods/simpleflags">
+        SimpleFlags, A mod that hooks into WorldGuard to add extra flags!
+    </LinkCard>
+</CardGrid>
+
+### Hytale
+#### Mods
+<CardGrid>
+    <LinkCard title="ChatterBox" icon="information" href="/hytale/mods/chatterbox">
+        A bountiful documentation to help you with everything ChatterBox, Bring your chat to life!
+    </LinkCard>
 </CardGrid>

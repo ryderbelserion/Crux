@@ -3,9 +3,9 @@ title: Permissions
 description: This page lists all the permissions available for ChatterBox
 
 sidebar:
-  order: 3
+  order: 4
 ---
-## Mod Permissions
+## Commands
 This page lists all the permissions available for ChatterBox
 
 | Permission                | Command           | Description                        |
