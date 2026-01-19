@@ -10,3 +10,9 @@ sidebar:
 |--------------------------|-------------------------------------------------|
 | prevent_natural_spawning | Stops mobs from naturally spawning in a region. |
 | prevent_drowning         | Stops players from drowning in a region.        |
+
+## Block Placement
+| Mod                          | Description                              |
+|------------------------------|------------------------------------------|
+| prevent_crafter_interactions | Prevent crafter interactions in regions. |
+| prevent_crafter_block        | Prevent crafter placement in regions.    |
