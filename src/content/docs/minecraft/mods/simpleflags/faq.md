@@ -3,7 +3,7 @@ title: FAQ
 description: A list of frequently asked questions
 
 sidebar:
-  order: 3
+  order: 4
 ---
 # What about X Minecraft version?
 You need a program like 7zip, NanaZip or PeaZip. 
