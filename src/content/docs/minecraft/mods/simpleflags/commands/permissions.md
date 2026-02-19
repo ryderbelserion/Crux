@@ -3,7 +3,7 @@ title: Permissions
 description: This page lists all the permissions available for SimpleFlags
 
 sidebar:
-  order: 4
+  order: 5
 ---
 ## Commands
 This page lists all the permissions available for SimpleFlags
