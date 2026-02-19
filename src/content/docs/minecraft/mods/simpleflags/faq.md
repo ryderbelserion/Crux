@@ -5,7 +5,7 @@ description: A list of frequently asked questions
 sidebar:
   order: 4
 ---
-# What about X Minecraft version?
+## What about X Minecraft version?
 You need a program like 7zip, NanaZip or PeaZip. 
 
 1) Download the jar file you want.
