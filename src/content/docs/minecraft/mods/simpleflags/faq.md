@@ -6,7 +6,7 @@ sidebar:
   order: 4
 ---
 ## What about X Minecraft version?
-You need a program like 7zip, NanaZip or PeaZip. 
+You need a program like 7zip, NanaZip or PeaZip, and be on a version of Paper that includes their plugin management system(paper-plugin.yml)
 
 1) Download the jar file you want.
 2) Open the jar file in 7zip, NanaZip or PeaZip.
