@@ -77,7 +77,11 @@ export default defineConfig({
 					label: 'Kofi',
 					href: 'https://ko-fi.com/ryderbelserion'
 				}
-			]
+			],
+
+			editLink: {
+				baseUrl: 'https://github.com/ryderbelserion/Crux/edit/main/',
+			},
 		}),
 	],
 });
