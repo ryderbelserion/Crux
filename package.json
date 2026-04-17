@@ -7,17 +7,22 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-types": "wrangler types"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.6.12",
+    "@astrojs/cloudflare": "^13.1.10",
     "@astrojs/starlight": "^0.38.3",
     "astro": "^6.0.1",
     "sharp": "^0.34.2",
-    "starlight-auto-sidebar": "^0.1.4",
-    "starlight-sidebar-topics": "^0.6.2"
+    "wrangler": "^4.83.0",
+    "starlight-auto-sidebar": "^0.2.0",
+    "starlight-sidebar-topics": "^0.7.1"
   },
   "devDependencies": {
     "astro-icon": "^1.1.5"
+  },
+  "overrides": {
+    "vite": "^7"
   }
 }
