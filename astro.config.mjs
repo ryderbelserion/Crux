@@ -1,87 +1,81 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
 
-import topics from 'starlight-sidebar-topics'
-import sidebar from 'starlight-auto-sidebar'
+import topics from "starlight-sidebar-topics"
+import sidebar from "starlight-auto-sidebar"
 
-import cloudflare from '@astrojs/cloudflare';
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://docs.ryderbelserion.com',
+    site: "https://docs.ryderbelserion.com",
 
-	adapter: cloudflare(),
+    integrations: [starlight({
+        title: "Crux",
 
-	integrations: [
-		starlight({
-			title: 'Crux',
-			plugins: [
-				sidebar(),
+        social: [
+            { icon: "github", label: "GitHub", href: "https://github.com/ryderbelserion/" },
+            { icon: "discord", label: "Discord", href: "https://discord.gg/ktxCyUd7Ny" },
+            { icon: "patreon", label: "Kofi", href: "https://ko-fi.com/ryderbelserion" }
+        ],
 
-				topics([
-					{
-						label: 'Getting Started',
-						link: '/getting_started/overview',
-						icon: 'information',
-						items: ['getting_started/overview'],
-					},
-					{
-						id: 'Minecraft',
-						label: {
-							en: 'Minecraft'
-						},
-						link: '/minecraft/',
-						icon: 'substack',
-						items: [
-							{
-								label: 'Mods',
-								autogenerate: {
-									directory: 'minecraft/mods'
-								}
-							}
-						]
-					},
-					{
-						id: 'Hytale',
-						label: {
-							en: 'Hytale'
-						},
-						link: '/hytale/',
-						icon: 'open-book',
-						items: [
-							{
-								label: 'Mods',
-								autogenerate: {
-									directory: 'hytale/mods'
-								}
-							}
-						]
-					},
-				]),
-			],
+        lastUpdated: true,
+        editLink: {
+            baseUrl: "https://github.com/ryderbelserion/Crux/edit/main/",
+        },
 
-			social: [
-				{
-					icon: 'github',
-					label: 'GitHub',
-					href: 'https://github.com/ryderbelserion/'
-				},
-				{
-					icon: 'discord',
-					label: 'Discord',
-					href: 'https://discord.gg/ktxCyUd7Ny'
-				},
-				{
-					icon: 'patreon',
-					label: 'Kofi',
-					href: 'https://ko-fi.com/ryderbelserion'
-				}
-			],
+        /*components: {
+            Sidebar: "@astrojs/starlight/components/Sidebar.astro"
+        },*/
 
-			editLink: {
-				baseUrl: 'https://github.com/ryderbelserion/Crux/edit/main/',
-			},
-		}),
-	],
+        plugins: [
+            sidebar(),
+
+            topics([
+                {
+                    id: "crux",
+                    label: "Getting Started",
+                    link: "/getting_started/overview",
+                    icon: "information",
+                    items: [
+                        "getting_started/overview"
+                    ],
+                },
+                {
+                    id: "minecraft",
+                    label: {
+                        en: "Minecraft"
+                    },
+                    link: "/minecraft/",
+                    icon: "substack",
+                    items: [
+                        {
+                            label: "Mods",
+                            autogenerate: {
+                                directory: "minecraft/mods"
+                            }
+                        }
+                    ]
+                },
+                {
+                    id: "hytale",
+                    label: {
+                        en: "Hytale"
+                    },
+                    link: "/hytale/",
+                    icon: "open-book",
+                    items: [
+                        {
+                            label: "Mods",
+                            autogenerate: {
+                                directory: "hytale/mods"
+                            }
+                        }
+                    ]
+                },
+            ]),
+        ],
+
+		}), icon()],
 });
