@@ -3,7 +3,6 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
 import topics from "starlight-sidebar-topics"
-import sidebar from "starlight-auto-sidebar"
 
 import icon from "astro-icon";
 
@@ -30,8 +29,6 @@ export default defineConfig({
         },*/
 
         plugins: [
-            sidebar(),
-
             topics([
                 {
                     id: "crux",
@@ -76,6 +73,11 @@ export default defineConfig({
                 },
             ]),
         ],
+
+        components: {
+            // Override the default `Sidebar` component with a custom one.
+            Sidebar: './src/components/Sidebar.astro',
+        }
 
 		}), icon()],
 });
