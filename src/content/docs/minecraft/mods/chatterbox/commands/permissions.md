@@ -6,13 +6,16 @@ sidebar:
   order: 4
 ---
 ## Commands
-This page lists all the permissions available for ChatterBox
+This page lists all the permissions available for ChatterBox.
 
-| Permission                | Command   | Description                |
-|---------------------------|-----------|----------------------------|
-| chatterbox.command.reload | cb reload | Gives access to /cb reload |
-| chatterbox.command.motd   | cb motd   | Gives access to /cb motd   |
-| chatterbox.command.use    | cb        | Gives access to /cb        |
+If you are running Velocity, the command is `/cbv`
+
+| Permission           | Command      | Description                   |
+|----------------------|--------------|-------------------------------|
+| chatterbox.broadcast | cb broadcast | Gives access to /cb broadcast |
+| chatterbox.reload    | cb reload    | Gives access to /cb reload    |
+| chatterbox.motd      | cb motd      | Gives access to /cb motd      |
+| chatterbox.use       | cb           | Gives access to /cb           |
 
 ### Color Formatting
 | Permission          | Description                                                             |
