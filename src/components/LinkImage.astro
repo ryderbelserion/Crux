@@ -1,0 +1,31 @@
+---
+import Image from "astro/components/Image.astro";
+
+const { text, link, image, alt } = Astro.props;
+---
+<div class="link-container">
+    <Image class="link-image" src={image} alt={alt}/>
+
+    <a href={link}>
+        <p>{text}</p>
+    </a>
+</div>
+
+<style scoped>
+    .link-container {
+        display: flex;
+
+        align-items: center;
+
+        .link-image {
+            height: 32px;
+            width: 32px;
+        }
+
+        a {
+            text-decoration: none;
+
+            padding-left: 0.5rem;
+        }
+    }
+</style>

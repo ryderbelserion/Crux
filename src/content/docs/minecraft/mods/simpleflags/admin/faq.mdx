@@ -1,0 +1,29 @@
+---
+title: Frequently Asked Questions
+description: Questions frequently asked by our users.
+
+slug: minecraft/mods/simpleflags/faq
+---
+import { Tabs, Steps, Aside } from "@astrojs/starlight/components";
+
+import TabCard from "@/components/other/TabCard.astro";
+
+<Tabs>
+    <TabCard label="#1">
+        <Aside type="tip">
+            You need a program like 7zip, NanaZip or PeaZip, and be on a version of Paper that includes their plugin management system(paper-plugin.yml)
+        </Aside>
+
+        #### What about X Minecraft version?
+
+        <Steps>
+            1) Download the jar file you want.
+            2) Open the jar file in 7zip, NanaZip or PeaZip.
+            3) Open paper-plugin.yml
+            4) Edit api-version to the Minecraft version you want (or remove the field all together to allow it to boot on any version.)
+            5) Save the paper-plugin.yml
+            6) Save the jar file
+            7) Throw in your plugins folder, and hit start server.
+        </Steps>
+    </TabCard>
+</Tabs>

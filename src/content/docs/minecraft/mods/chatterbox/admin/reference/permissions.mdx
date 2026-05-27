@@ -1,21 +1,23 @@
 ---
 title: Permissions
-description: This page lists all the permissions available for ChatterBox
+description: All available commands for ChatterBox.
 
-sidebar:
-  order: 4
+slug: minecraft/mods/chatterbox/reference/commands
 ---
-## Commands
-This page lists all the permissions available for ChatterBox.
+import { Aside } from "@astrojs/starlight/components";
 
-If you are running Velocity, the command is `/cbv`
+**This page lists all permissions included in ChatterBox.**
 
-| Permission           | Command      | Description                   |
-|----------------------|--------------|-------------------------------|
-| chatterbox.broadcast | cb broadcast | Gives access to /cb broadcast |
-| chatterbox.reload    | cb reload    | Gives access to /cb reload    |
-| chatterbox.motd      | cb motd      | Gives access to /cb motd      |
-| chatterbox.use       | cb           | Gives access to /cb           |
+<Aside type="tip">
+    The base command `/cb` requires `chatterbox.use`
+</Aside>
+
+### Command Permissions
+| Command         | Permission Node      | Description                             | Player has by default? |
+|-----------------|----------------------|-----------------------------------------|------------------------|
+| `/cb broadcast` | chatterbox.broadcast | Gives access to /cb broadcast [message] | false                  |
+| `/cb reload`    | chatterbox.reload    | Gives access to /cb reload              | false                  |
+| `/cb motd`      | chatterbox.motd      | Gives access to /cb motd                | false                  |
 
 ### Color Formatting
 | Permission          | Description                                                             |

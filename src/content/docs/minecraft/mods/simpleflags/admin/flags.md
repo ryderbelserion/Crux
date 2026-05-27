@@ -1,9 +1,8 @@
 ---
 title: Available Flags
-description: A list of available flags
+description: A list of available flags.
 
-sidebar:
-  order: 2
+slug: minecraft/mods/simpleflags/flags
 ---
 ## Damage Flags
 | Mod                      | Description                                     |

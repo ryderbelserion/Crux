@@ -1,0 +1,19 @@
+---
+title: Permissions
+description: All available commands for SimpleFlags.
+
+slug: minecraft/mods/simpleflags/reference/commands
+---
+import { Aside } from "@astrojs/starlight/components";
+
+**This page lists all permissions included in SimpleFlags.**
+
+<Aside type="tip">
+    The base command `/simpleflags` requires `simpleflags.access`
+</Aside>
+
+### Command Permissions
+| Command               | Permission Node    | Description                         | Player has by default? |
+|-----------------------|--------------------|-------------------------------------|------------------------|
+| `/simpleflags reload` | simpleflags.help   | Gives access to /simpleflags reload | op                     |
+| `/simpleflags help`   | simpleflags.reload | Gives access to /simpleflags help   | op                     |

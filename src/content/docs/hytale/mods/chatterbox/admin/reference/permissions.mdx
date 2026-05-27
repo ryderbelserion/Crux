@@ -1,0 +1,20 @@
+---
+title: Permissions
+description: All available commands for ChatterBox.
+
+slug: hytale/mods/chatterbox/reference/commands
+---
+import { Aside } from "@astrojs/starlight/components";
+
+**This page lists all permissions included in ChatterBox.**
+
+<Aside type="tip">
+    The base command `/cb` requires `chatterbox.command.use`
+</Aside>
+
+### Command Permissions
+| Command         | Permission Node              | Description                             | Player has by default? |
+|-----------------|------------------------------|-----------------------------------------|------------------------|
+| `/cb broadcast` | chatterbox.command.broadcast | Gives access to /cb broadcast [message] | false                  |
+| `/cb reload`    | chatterbox.command.reload    | Gives access to /cb reload              | false                  |
+| `/cb motd`      | chatterbox.command.motd      | Gives access to /cb motd                | false                  |

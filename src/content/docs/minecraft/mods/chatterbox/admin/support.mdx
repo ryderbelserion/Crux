@@ -1,0 +1,27 @@
+---
+title: Plugin Support
+description: Plugins supported by us.
+
+slug: minecraft/mods/chatterbox/support
+---
+import TabCard from "@/components/other/TabCard.astro";
+import Link from "@/components/LinkImage.astro";
+
+import { Tabs } from "@astrojs/starlight/components";
+
+import Modrinth from "@/assets/svgs/platforms/minimal/modrinth.svg";
+import LuckPerms from "@/assets/svgs/luckperms.svg";
+
+### Permission Plugins
+<Tabs>
+    <TabCard label="LuckPerms">
+        <Link text="Download" link="https://modrinth.com/plugin/luckperms" image={LuckPerms} alt="LuckPerms Logo"/>
+    </TabCard>
+</Tabs>
+
+### Placeholder Plugins
+<Tabs>
+    <TabCard label="PlaceholderAPI">
+        <Link text="Download" link="https://modrinth.com/plugin/placeholderapi" image={Modrinth} alt="Modrinth Logo"/>
+    </TabCard>
+</Tabs>

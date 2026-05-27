@@ -1,20 +1,32 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-//import cloudflare from '@astrojs/cloudflare';
+import cloudflare from '@astrojs/cloudflare';
 
-import topics from "starlight-sidebar-topics"
+import topics from 'starlight-sidebar-topics';
 
-import icon from "astro-icon";
+import vue from '@astrojs/vue';
 
 // https://astro.build/config
 export default defineConfig({
     site: "https://docs.ryderbelserion.com",
 
-    //adapter: cloudflare(),
+    adapter: cloudflare(),
+
+    image: {
+        responsiveStyles: true,
+        layout: "constrained",
+        domains: ["cdn.ryderbelserion.com"],
+    },
 
     integrations: [starlight({
-        title: "Crux",
+        title: "Ryder's Log",
+
+        customCss: [
+            './src/styles/custom.css',
+        ],
+
+        favicon: 'https://cdn.ryderbelserion.com/ryderbelserion.svg',
 
         social: [
             { icon: "github", label: "GitHub", href: "https://github.com/ryderbelserion/" },
@@ -27,9 +39,12 @@ export default defineConfig({
             baseUrl: "https://github.com/ryderbelserion/Crux/edit/main/",
         },
 
-        /*components: {
-            Sidebar: "@astrojs/starlight/components/Sidebar.astro"
-        },*/
+        credits: true,
+
+        components: {
+            // Override the default `Sidebar` component with a custom one.
+            Sidebar: './src/components/Sidebar.astro',
+        },
 
         plugins: [
             topics([
@@ -50,11 +65,41 @@ export default defineConfig({
                     link: "/minecraft/",
                     icon: "substack",
                     items: [
+                        "minecraft",
                         {
                             label: "Mods",
-                            autogenerate: {
-                                directory: "minecraft/mods"
-                            }
+                            items: [
+                                {
+                                    label: "ChatterBox",
+                                    items: [
+                                        "minecraft/mods/chatterbox",
+                                        "minecraft/mods/chatterbox/faq",
+                                        "minecraft/mods/chatterbox/support",
+                                        "minecraft/mods/chatterbox/contributing",
+                                        {
+                                            label: "Reference",
+                                            items: [
+                                                "minecraft/mods/chatterbox/reference/commands"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    label: "SimpleFlags",
+                                    items: [
+                                        "minecraft/mods/simpleflags",
+                                        "minecraft/mods/simpleflags/faq",
+                                        "minecraft/mods/simpleflags/support",
+                                        "minecraft/mods/simpleflags/contributing",
+                                        {
+                                            label: "Reference",
+                                            items: [
+                                                "minecraft/mods/simpleflags/reference/commands"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
@@ -66,21 +111,30 @@ export default defineConfig({
                     link: "/hytale/",
                     icon: "open-book",
                     items: [
+                        "hytale",
                         {
                             label: "Mods",
-                            autogenerate: {
-                                directory: "hytale/mods"
-                            }
+                            items: [
+                                {
+                                    label: "ChatterBox",
+                                    items: [
+                                        "hytale/mods/chatterbox",
+                                        "hytale/mods/chatterbox/faq",
+                                        "hytale/mods/chatterbox/support",
+                                        "hytale/mods/chatterbox/contributing",
+                                        {
+                                            label: "Reference",
+                                            items: [
+                                                "hytale/mods/chatterbox/reference/commands"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
-                },
-            ]),
-        ],
-
-        components: {
-            // Override the default `Sidebar` component with a custom one.
-            Sidebar: './src/components/Sidebar.astro',
-        }
-
-		}), icon()],
+                }
+            ])
+        ]
+		}), vue()]
 });

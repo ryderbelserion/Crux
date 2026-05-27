@@ -7,5 +7,17 @@
   ],
   "exclude": [
     "dist"
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "$/*": [
+        "./public/*"
+      ]
+    },
+    "jsx": "preserve"
+  }
 }

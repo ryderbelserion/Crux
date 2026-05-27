@@ -1,0 +1,63 @@
+---
+title: Contributing
+description: Contribute to ChatterBox!
+
+slug: hytale/mods/chatterbox/contributing
+---
+import { Aside, Tabs, Steps } from "@astrojs/starlight/components";
+
+import TabCard from "@/components/other/TabCard.astro";
+
+<Aside type="tip">
+    Contributions to ChatterBox is a much easier process if you discuss it in Discord *before* making a pull request.
+
+    Pull Requests *must* always be made as a personal repository, and not under an organization. If it's under an organization, It prevents us from modifying your fork.
+
+    If you do not fork the repository to your personal profile, The pull request will be marked as closed instead of merged.
+</Aside>
+
+<Aside type="caution">
+    - Pull Requests that update Gradle, and things like that which are not the solution to fixing something will be closed.
+    - Pull Requests that have been found to have been entirely AI generated will be closed.
+</Aside>
+
+### Compiling ChatterBox
+<Tabs>
+    <TabCard label="Requirements">
+        - [Intellij IDEA](https://www.jetbrains.com/idea/download/)
+        - Java 25 JDK(Amazon Corretto) or newer
+        - Gradle 9.5.1
+        - Brain
+    </TabCard>
+</Tabs>
+
+#### Process
+<Steps>
+    1. git clone https://github.com/ryderbelserion/ChatterBox.git
+
+    2. cd ChatterBox
+
+    3. ./gradlew puzzle
+
+    4. Check `build/libs`
+</Steps>
+
+### Coding Practices
+- Copy the style of code in the class you are editing.
+- No extra lines at the end of files.
+- No extra lines between imports.
+- No wildcard imports.
+
+### Pull Requests Labels
+Pull Requests must be labeled properly according to if it's a bug fix, a new feature or enhancements to the code base.
+- `git checkout -b fix/your_fix`
+- `git checkout -b feature/your_feature`
+- `git checkout -b quality/your_enhancement`
+- Commit your changes using `git commit -m 'your commit'`
+- Push to your branch using `git push`
+
+### What's next?
+You must explain what your pull request is changing and if needed, If needed, supply a video of your change as Pull Requests are a way to get feedback.
+
+- The branch you open the pull request to depends on the scope of your change.
+  - Anything considered a "fix" or "internal" clean up that will not cripple a server or vastly change the experience of a server can be sent as a pull request to the `main` branch
