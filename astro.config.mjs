@@ -11,7 +11,7 @@ import vue from '@astrojs/vue';
 export default defineConfig({
     site: "https://docs.ryderbelserion.com",
 
-    //adapter: cloudflare(),
+    adapter: cloudflare(),
 
     image: {
         responsiveStyles: true,
@@ -63,6 +63,7 @@ export default defineConfig({
                     link: "/minecraft/",
                     icon: "substack",
                     items: [
+                        "minecraft/index",
                         {
                             label: "Mods",
                             items: [
@@ -107,6 +108,7 @@ export default defineConfig({
                     link: "/hytale/",
                     icon: "open-book",
                     items: [
+                        "hytale/index",
                         {
                             label: "Mods",
                             items: [
