@@ -20,7 +20,7 @@ export default defineConfig({
     },
 
     integrations: [starlight({
-        title: "Ryder's Log",
+        title: "Crux",
 
         customCss: [
             './src/styles/custom.css',
@@ -65,7 +65,6 @@ export default defineConfig({
                     link: "/minecraft/",
                     icon: "substack",
                     items: [
-                        "minecraft",
                         {
                             label: "Mods",
                             items: [
@@ -111,7 +110,6 @@ export default defineConfig({
                     link: "/hytale/",
                     icon: "open-book",
                     items: [
-                        "hytale",
                         {
                             label: "Mods",
                             items: [
