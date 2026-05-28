@@ -11,7 +11,7 @@ import vue from '@astrojs/vue';
 export default defineConfig({
     site: "https://docs.ryderbelserion.com",
 
-    adapter: cloudflare(),
+    //adapter: cloudflare(),
 
     image: {
         responsiveStyles: true,
@@ -56,78 +56,6 @@ export default defineConfig({
                     items: [
                         "getting_started/overview"
                     ],
-                },
-                {
-                    id: "minecraft",
-                    label: "Minecraft",
-                    link: "/minecraft/",
-                    icon: "substack",
-                    items: [
-                        {
-                            label: "Mods",
-                            items: [
-                                {
-                                    label: "ChatterBox",
-                                    items: [
-                                        "minecraft/mods/chatterbox",
-                                        "minecraft/mods/chatterbox/faq",
-                                        "minecraft/mods/chatterbox/support",
-                                        "minecraft/mods/chatterbox/contributing",
-                                        {
-                                            label: "Reference",
-                                            items: [
-                                                "minecraft/mods/chatterbox/reference/commands"
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    label: "SimpleFlags",
-                                    items: [
-                                        "minecraft/mods/simpleflags",
-                                        "minecraft/mods/simpleflags/faq",
-                                        "minecraft/mods/simpleflags/flags",
-                                        "minecraft/mods/simpleflags/support",
-                                        "minecraft/mods/simpleflags/contributing",
-                                        {
-                                            label: "Reference",
-                                            items: [
-                                                "minecraft/mods/simpleflags/reference/commands"
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    id: "hytale",
-                    label: "Hytale",
-                    link: "/hytale/",
-                    icon: "open-book",
-                    items: [
-                        {
-                            label: "Mods",
-                            items: [
-                                {
-                                    label: "ChatterBox",
-                                    items: [
-                                        "hytale/mods/chatterbox",
-                                        "hytale/mods/chatterbox/faq",
-                                        "hytale/mods/chatterbox/support",
-                                        "hytale/mods/chatterbox/contributing",
-                                        {
-                                            label: "Reference",
-                                            items: [
-                                                "hytale/mods/chatterbox/reference/commands"
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
                 }
             ])
         ]
