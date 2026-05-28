@@ -88,6 +88,7 @@ export default defineConfig({
                                     items: [
                                         "minecraft/mods/simpleflags",
                                         "minecraft/mods/simpleflags/faq",
+                                        "minecraft/mods/simpleflags/flags",
                                         "minecraft/mods/simpleflags/support",
                                         "minecraft/mods/simpleflags/contributing",
                                         {
