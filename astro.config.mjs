@@ -63,7 +63,7 @@ export default defineConfig({
                     link: "/minecraft/",
                     icon: "substack",
                     items: [
-                        "minecraft/index",
+                        "minecraft/overview",
                         {
                             label: "Mods",
                             items: [
@@ -108,7 +108,7 @@ export default defineConfig({
                     link: "/hytale/",
                     icon: "open-book",
                     items: [
-                        "hytale/index",
+                        "hytale/overview",
                         {
                             label: "Mods",
                             items: [
