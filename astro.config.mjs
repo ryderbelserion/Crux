@@ -60,7 +60,7 @@ export default defineConfig({
                 {
                     id: "minecraft",
                     label: "Minecraft",
-                    link: "/minecraft/",
+                    link: "/minecraft/overview",
                     icon: "substack",
                     items: [
                         "minecraft/overview",
@@ -105,7 +105,7 @@ export default defineConfig({
                 {
                     id: "hytale",
                     label: "Hytale",
-                    link: "/hytale/",
+                    link: "/hytale/overview",
                     icon: "open-book",
                     items: [
                         "hytale/overview",
