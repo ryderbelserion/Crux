@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-import cloudflare from '@astrojs/cloudflare';
+// import cloudflare from '@astrojs/cloudflare';
 
 import topics from 'starlight-sidebar-topics';
 
@@ -11,7 +11,7 @@ import vue from '@astrojs/vue';
 export default defineConfig({
     site: "https://docs.ryderbelserion.com",
 
-    adapter: cloudflare(),
+    //adapter: cloudflare(),
 
     image: {
         responsiveStyles: true,
